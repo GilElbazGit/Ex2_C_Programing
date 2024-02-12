@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include "my_mat.h"
 
-
 int main(){
     int mat [10][10]={};
     char funcChoise;
@@ -32,7 +31,7 @@ int main(){
                     printf("%d\n",ans);
                 }
                 break;
-            case ('D'||'EOF'):
+            case ('D'||"EOF"):
                 break;
 
         }
