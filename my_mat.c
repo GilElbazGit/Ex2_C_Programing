@@ -1,4 +1,5 @@
-#include "stdio.h"
+#include <stdio.h>
+#include "my_mat.h"
 
 void build_mat(int mat[][10])
 {

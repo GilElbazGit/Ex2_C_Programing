@@ -31,7 +31,7 @@ int main(){
                     printf("%d\n",ans);
                 }
                 break;
-            case ('D'||'EOF'):
+            case ('D'||"EOF"):
                 break;
 
         }
