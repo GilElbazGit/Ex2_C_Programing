@@ -6,34 +6,38 @@ int main(){
     char funcChoise;
     int i;
     int j;
+    if(scanf("%c", &funcChoise) == EOF){
+        return 0;
+    }
     while (funcChoise!='D'){
-        scanf("%c",&funcChoise);
-        switch (funcChoise){
+        switch (funcChoise) {
             case 'A':
                 build_mat(mat);
                 break;
             case 'B':
-                scanf("%d%d",&i,&j);
-                if(shortestPath(mat,i,j)<=0||i==j){
+                scanf("%d%d", &i, &j);
+                if (shortestPath(mat, i, j) <= 0 || i == j) {
                     printf("False\n");
-                }
-                else{
+                } else {
                     printf("True\n");
                 }
                 break;
             case 'C':
-                scanf("%d%d",&i,&j);
-                int ans=shortestPath(mat,i,j);
-                if (i==j||ans<0){
+                scanf("%d%d", &i, &j);
+                int ans = shortestPath(mat, i, j);
+                if (i == j || ans < 0) {
                     printf("-1\n");
-                }
-                else{
-                    printf("%d\n",ans);
+                } else {
+                    printf("%d\n", ans);
                 }
                 break;
-            case ('D'||"EOF"):
+            case ('D'):
                 break;
 
+
+        }
+        if(scanf("%c", &funcChoise) == EOF){
+            return 0;
         }
     }
 
