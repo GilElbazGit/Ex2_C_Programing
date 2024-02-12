@@ -1,6 +1,6 @@
 #include "stdio.h"
 
-void build_mat(int mat[][])
+void build_mat(int mat[][10])
 {
     for (int i = 0; i < 10; i++)
     {

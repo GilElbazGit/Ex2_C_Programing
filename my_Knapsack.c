@@ -68,7 +68,7 @@ int knapSack(int weight[],int value[], int selected_bool[]){
     while(index >= 0){
         int withOuti = 0;
         if(index == 0){
-            if(dynamicTable[index][currWeight] == values[index]){
+            if(dynamicTable[index][currWeight] == value[index]){
                 selected_bool[index] = 1;
                 break;
             }else{
