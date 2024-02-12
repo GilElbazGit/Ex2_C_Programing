@@ -1,5 +1,6 @@
 #include <stdio.h>
-#include "my_mat.c"
+#include "my_mat.h"
+
 
 int main(){
     int mat [10][10]={};
